@@ -1,0 +1,13 @@
+{
+    "name": "Keamanan",
+    "alias": "keamanan",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Keamanan\\Providers\\KeamananServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

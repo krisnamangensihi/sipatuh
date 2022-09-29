@@ -1,0 +1,17 @@
+foreach ($request->leadershipdoc as $key => $value) {
+            if ($value['document']) {
+                if ($value['olddocument']) {
+                    Storage::delete($value['olddocument']);
+                }
+
+                $document = $value['document']->store('file_k3');
+
+                Leadershipdoc::where('leadership_id', $id)->update([
+                    'leadership_id' => $id,
+                    'keterangan' => $value['keterangan'],
+                    'document' => $document,
+                ]);
+            }
+             return redirect('/K3/rkap')->with('success', 'Pengajuan Anda Sedang Di Proses Silahkan Hubungi AO'); 
+        }
+}

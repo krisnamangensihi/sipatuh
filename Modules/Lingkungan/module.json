@@ -1,0 +1,13 @@
+{
+    "name": "Lingkungan",
+    "alias": "lingkungan",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Lingkungan\\Providers\\LingkunganServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
